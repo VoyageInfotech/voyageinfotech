@@ -3,31 +3,31 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import w1 from "../../assets/image/why/image1.webp";
-import w2 from "../../assets/image/why/image2.webp";
-import w3 from "../../assets/image/why/image3.webp";
+import w1 from "../../assets/image/About/choose/1.webp";
+import w2 from "../../assets/image/About/choose/2.webp";
+import w3 from "../../assets/image/About/choose/3.webp";
+
 import "../../assets/css/Home.css";
 import { useTheme } from "@emotion/react";
-
 
 const companyDetails = [
   {
     icon: w1,
-    title: "Global Exposure",
+    title: "Attentive to the Details",
     description:
-      "In over 9 years, we have served clients belonging to the USA, UK, Canada, Europe, and Australia. So, we are well aware of the ways of working and legal terms pertaining to these nations.",
+      "In the grand scheme of things, the small intricacies of your business hold tremendous significance. We strive to grasp every facet of your operations, enabling us to deliver superior products and comprehensive after-sales services.",
   },
   {
     icon: w2,
-    title: "Long Term Relationships",
+    title: "You Are Exceptional",
     description:
-      "Patoliya Infotech values long-term client relationships through learning about their needs, goals, and obstacles. Through trust, and exceeding expectations, we deliver customized solutions and build long-term partnerships.",
+      "Recognizing the value of being heard, understood, and standing out, we have dedicated a team solely to craft custom web designs and solutions tailored specifically for you. Our web development specialists ensure you receive the exclusivity and distinctiveness you deserve.",
   },
   {
     icon: w3,
-    title: "Diverse Expertise",
+    title: "It's a Partnership",
     description:
-      "We have a skilled team of 50+ IT professionals who possess expertise in varied technologies. Like PHP, MEAN/MERN Stack, Hybrid apps, Android, iOS, and AI, our team has nailed it all.",
+      "At the heart of the business lies relationships. Our goal extends beyond providing solutions; we aim to care for your business processes and offer expert IT consultancy, empowering you to focus on the core aspects of your enterprise.",
   },
 ];
 
@@ -48,28 +48,19 @@ const WhyChoose = () => {
           <Box sx={{ textAlign: "center", marginBottom: 2 }}>
             <Typography
               variant="h4"
-              component="h4"
               sx={{
                 color: theme.palette.secondary.third,
                 fontFamily: theme.palette.fontFamily,
                 fontWeight: "bold",
                 mb: 1,
+                fontSize:{
+                    xs: 24,
+                    sm: 28,
+                    lg:30
+                }
               }}
             >
-              WHY DEOWEB ?
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                color: theme.palette.secondary.lightgrey,
-                fontWeight: 400,
-                fontFamily: theme.typography.fontFamily,
-                maxWidth: 700,
-                margin: "auto",
-              }}
-            >
-              Consider our standout qualities along with our work, ethics, team
-              capabilities, and client testimonials when choosing us.
+              Why Choose Deoweb ?
             </Typography>
           </Box>
 
@@ -82,12 +73,16 @@ const WhyChoose = () => {
             }}
           >
             {companyDetails.map((service, index) => (
-              <Grid item xs={12} md={6} lg={4}>
+              <Grid item xs={12} md={6} lg={4} key={index}>
                 <Box
                   sx={{
                     p: 3,
                     border: `2px solid ${theme.palette.secondary.second}`,
                     borderRadius: 2,
+                    height: 400, 
+                    display: "flex",
+                    flexDirection: "column", 
+                    justifyContent: "flex-start",
                     transition: "transform 0.3s ease, box-shadow 0.3s ease",
                     "&:hover": {
                       transform: "scale(1.05)",
@@ -105,7 +100,10 @@ const WhyChoose = () => {
                       }}
                     >
                       <div className="service-icon">
-                        <img src={service.icon} alt="icon" />
+                        <img src={service.icon} alt="icon"  sx={{
+                            width: 40,
+                            height: 40,
+                        }}/>
                       </div>
                     </Box>
                   </Box>
@@ -115,19 +113,22 @@ const WhyChoose = () => {
                       component="h6"
                       textAlign="center"
                       sx={{
-                        fontFamily: 'Nunito", sans-serif',
-                        my:1
+                        fontFamily:theme.typography.fontFamily,
+                        color: theme.palette.primary.main,
+                        my: 1,
                       }}
                     >
                       {service.title}
                     </Typography>
                     <Typography
-                      variant="p"
+                      variant="body1"
                       textAlign="center"
                       component="p"
                       sx={{
-                        color: theme.palette.lightgrey,
-                        my:1
+                        color: theme.palette.customColors.lightgrey,
+                        fontFamily:theme.typography.fontFamily,
+
+                        my: 1,
                       }}
                     >
                       {service.description}
