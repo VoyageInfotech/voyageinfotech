@@ -47,7 +47,7 @@ const Footer = () => {
         { text: "Home", to: "/", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "About", to: "/about", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Blogs", to: "/blogs", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Technology", to: "/technology", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        { text: "Services", to: "/service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Contact Us", to: "/contact-us", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Terms", to: "/term", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
       ],
@@ -55,9 +55,10 @@ const Footer = () => {
     {
       title: "Our Services",
       links: [
-        { text: "iOS App Development", to: "/mobile/iosAppDevelopment", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Node.js Development", to: "/backend/nodejsDevelopment", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "React.js Development", to: "/frontend/reactJsDevelopment", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        { text: "Web Development", to: "services", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        { text: "UI/UX  Design", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        { text: "App Development", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        { text: "Career", to: "/career", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Policy", to: "/policy", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
       ],
     },

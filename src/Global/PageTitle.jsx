@@ -13,11 +13,13 @@ function PageTitle({ title, description }) {
         <div className="main-banner">
           <div className="child-inner">
             <Box>
-              <Box sx={{
-                display:'flex',
-                justifyContent:'center',
-                my:2
-              }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  my: 2,
+                }}
+              >
                 <Breadcrumbs
                   sx={{
                     border: `1px dotted ${theme.palette.primary.main}`,
@@ -77,6 +79,8 @@ function PageTitle({ title, description }) {
                 sx={{
                   color: theme.palette.customColors.lightgrey,
                   textAlign: "center",
+                  maxWidth: "700px",
+                  margin:'auto' 
                 }}
               >
                 {description}

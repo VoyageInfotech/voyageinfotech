@@ -86,52 +86,52 @@ const Header = () => {
   const menuItems = [
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
-    {
-      label: "Technology",
-      subItems: [
-        {
-          category: "App Development",
-          items: [
-            {
-              label: "React Native Development",
-              to: "/mobile/reactNativeAppDevelopment",
-            },
-            {
-              label: "Flutter Development",
-              to: "/mobile/FlutterAppDevelopment",
-            },
-            { label: "iOS Development", to: "/mobile/iosAppDevelopment" },
-            {
-              label: "Android Development",
-              to: "/mobile/androidAppDevelopment",
-            },
-          ],
-        },
-        {
-          category: "Web Development",
-          items: [
-            {
-              label: "React JS Development",
-              to: "/frontend/reactJsDevelopment",
-            },
-            {
-              label: "Angular Development",
-              to: "/frontend/angularJsDevelopment",
-            },
-            { label: "Vue JS Development", to: "/frontend/vueJsDevelopment" },
-          ],
-        },
-        {
-          category: "Backend Development",
-          items: [
-            { label: "Node.js Development", to: "/backend/nodejsDevelopment" },
-            { label: ".NET Development", to: "/backend/netDevelopment" },
-            { label: "Python Development", to: "/backend/pythonDevelopment" },
-          ],
-        },
-      ],
-    },
-    { label: "Client", to: "/client" },
+    // {
+    //   label: "Technology",
+    //   subItems: [
+    //     {
+    //       category: "App Development",
+    //       items: [
+    //         {
+    //           label: "React Native Development",
+    //           to: "/mobile/reactNativeAppDevelopment",
+    //         },
+    //         {
+    //           label: "Flutter Development",
+    //           to: "/mobile/FlutterAppDevelopment",
+    //         },
+    //         { label: "iOS Development", to: "/mobile/iosAppDevelopment" },
+    //         {
+    //           label: "Android Development",
+    //           to: "/mobile/androidAppDevelopment",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       category: "Web Development",
+    //       items: [
+    //         {
+    //           label: "React JS Development",
+    //           to: "/frontend/reactJsDevelopment",
+    //         },
+    //         {
+    //           label: "Angular Development",
+    //           to: "/frontend/angularJsDevelopment",
+    //         },
+    //         { label: "Vue JS Development", to: "/frontend/vueJsDevelopment" },
+    //       ],
+    //     },
+    //     {
+    //       category: "Backend Development",
+    //       items: [
+    //         { label: "Node.js Development", to: "/backend/nodejsDevelopment" },
+    //         { label: ".NET Development", to: "/backend/netDevelopment" },
+    //         { label: "Python Development", to: "/backend/pythonDevelopment" },
+    //       ],
+    //     },
+    //   ],
+    // },
+    { label: "Services", to: "/service" },
     { label: "Career", to: "/career" },
     { label: "Blog", to: "/blogs" },
     { label: "Contact Us", to: "/contact" },
