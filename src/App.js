@@ -8,6 +8,8 @@ import Footer from "./Global/Footer";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
 import Careers from "./Pages/Careers";
+import Contact from "./Pages/Contact";
+import CaseStudy from "./Pages/CaseStudy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,6 +47,8 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/service" element={<Service/>} />
           <Route path="/career" element={<Careers/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/case-study" element={<CaseStudy/>} />
       
 
           {/* Fallback Route */}

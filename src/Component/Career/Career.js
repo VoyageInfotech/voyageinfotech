@@ -344,7 +344,7 @@ function Career() {
                         style={{ width: 20, height: 20 }}
                       />
                       <Link
-                        to="/"
+                        to="//api.whatsapp.com/send?phone=919408304364&text=Hi I am Interested"
                         target="_blank"
                         style={{
                           color: theme.palette.primary.main,

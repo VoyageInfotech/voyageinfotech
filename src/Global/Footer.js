@@ -19,23 +19,23 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      href: "https://www.facebook.com/profile.php?id=61555676966897",
+      href: "",
       Icon: FacebookOutlinedIcon,
     },
     {
-      href: "https://twitter.com/JBSTechnology26",
+      href: "",
       Icon: TwitterIcon,
     },
     {
-      href: "https://www.instagram.com/editsh_technology/",
+      href: "",
       Icon: InstagramIcon,
     },
     {
-      href: "https://www.linkedin.com/company/editsh/posts/?feedView=all",
+      href: "https://www.linkedin.com/company/104121643/admin/dashboard/",
       Icon: LinkedInIcon,
     },
     {
-      href: "https://wa.me/9601175985",
+      href: "https://wa.me/9408304364",
       Icon: WhatsAppIcon,
     },
   ];
@@ -49,7 +49,6 @@ const Footer = () => {
         { text: "Blogs", to: "/blogs", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Services", to: "/service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Contact Us", to: "/contact-us", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Terms", to: "/term", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
       ],
     },
     {
@@ -59,7 +58,6 @@ const Footer = () => {
         { text: "UI/UX  Design", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "App Development", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
         { text: "Career", to: "/career", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Policy", to: "/policy", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
       ],
     },
   ];
@@ -222,7 +220,7 @@ const Footer = () => {
                   }} />
                 </Box>
                 <Link
-                  to="mailto:edithtech01@gmail.com"
+                  to="mailto:deoweb09@gmail.com"
                   style={{
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
@@ -230,7 +228,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  edithtech01@gmail.com
+                  deoweb09@gmail.com
                 </Link>
               </Box>
 
@@ -258,7 +256,7 @@ const Footer = () => {
                   }} />
                 </Box>
                 <Link
-                  to="tel:+919601175985"
+                  to="tel:+91 9408304364"
                   style={{
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
@@ -266,7 +264,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  +91 9601175985
+                  +91 9408304364
                 </Link>
               </Box>
 
@@ -294,7 +292,7 @@ const Footer = () => {
                   }} />
                 </Box>
                 <Link
-                  to="https://goo.gl/maps/EMLgQrkzomRRt7vH6"
+                  to="#"
                   target="_blank"
                   style={{
                     color: theme.palette.primary.main,
@@ -303,7 +301,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  Ahmedabad, Gujarat, India
+                 Royal Arcade,Surat,Gujarat -395006
                 </Link>
               </Box>
             </Box>

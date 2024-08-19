@@ -10,7 +10,7 @@ const theme = createTheme({
     secondary: {
       main: '#00a8ea',
       second: '#e4f8ff',
-      third: '#082e53' // Removed the double hash
+      third: '#082e53'
     },
     customColors: {
       shadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',

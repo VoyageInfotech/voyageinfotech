@@ -11,7 +11,7 @@ const ScrollToTopButton = styled("div")(({ theme }) => ({
 }));
 
 const ScrollToTop = ({ children }) => {
-  const theme=useTheme();
+  const theme = useTheme();
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
@@ -23,9 +23,13 @@ const ScrollToTop = ({ children }) => {
 
   return (
     <Zoom in={trigger}>
-      <ScrollToTopButton onClick={handleClick} role="presentation" sx={{
-        color:theme.palette.white
-      }}>
+      <ScrollToTopButton
+        onClick={handleClick}
+        role="presentation"
+        sx={{
+          color: theme.palette.customColors.white,
+        }}
+      >
         {children}
       </ScrollToTopButton>
     </Zoom>
@@ -33,11 +37,17 @@ const ScrollToTop = ({ children }) => {
 };
 
 const App = () => {
+  const theme = useTheme();
+
   return (
     <div>
       <ScrollToTop>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
+          <KeyboardArrowUpIcon
+            sx={{
+              color: theme.palette.customColors.white,
+            }}
+          />
         </Fab>
       </ScrollToTop>
     </div>

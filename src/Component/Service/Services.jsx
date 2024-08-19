@@ -16,6 +16,11 @@ import k3 from "../../assets/image/features/3.png";
 import k4 from "../../assets/image/features/4.png";
 import k5 from "../../assets/image/features/5.png";
 import k6 from "../../assets/image/features/6.png";
+// Web development
+import w4 from "../../assets/image/Home/technology/Frontend/1.webp";
+import w2 from "../../assets/image/Home/technology/Backend/2.webp";
+import w3 from "../../assets/image/Home/technology/Frontend/5.webp";
+import w1 from "../../assets/image/Home/technology/Frontend/3.webp";
 
 function Services() {
   const theme = useTheme();
@@ -181,60 +186,72 @@ function Services() {
                       }}
                     >
                       <Box>
-                        <Button
+                        <Box
                           sx={{
                             backgroundColor: theme.palette.secondary.second,
                             shadow: theme.palette.customColors.shadow,
                             color: theme.palette.primary.main,
+                            width: 50,
+                            height: 50,
+                            borderRadius: "50%",
                             "&:hover": {
                               backgroundColor: theme.palette.secondary.second,
                             },
                           }}
                         >
-                          React js
-                        </Button>
+                          <img src={w4} alt="alt" />
+                        </Box>
                       </Box>
                       <Box>
-                        <Button
+                        <Box
                           sx={{
                             backgroundColor: theme.palette.secondary.second,
                             shadow: theme.palette.customColors.shadow,
                             color: theme.palette.primary.main,
+                            width: 50,
+                            height: 50,
+                            borderRadius: "50%",
                             "&:hover": {
                               backgroundColor: theme.palette.secondary.second,
                             },
                           }}
                         >
-                          Node js
-                        </Button>
+                          <img src={w2} alt="alt" />
+                        </Box>
                       </Box>
                       <Box>
-                        <Button
+                        <Box
                           sx={{
                             backgroundColor: theme.palette.secondary.second,
                             shadow: theme.palette.customColors.shadow,
                             color: theme.palette.primary.main,
+                            width: 50,
+                            height: 50,
+                            borderRadius: "50%",
                             "&:hover": {
                               backgroundColor: theme.palette.secondary.second,
                             },
                           }}
                         >
-                          Next js
-                        </Button>
+                          <img src={w3} alt="alt" />
+                        </Box>
                       </Box>
                       <Box>
-                        <Button
+                        <Box
                           sx={{
                             backgroundColor: theme.palette.secondary.second,
                             shadow: theme.palette.customColors.shadow,
                             color: theme.palette.primary.main,
+                            width: 50,
+                            height: 50,
+                            borderRadius: "50%",
                             "&:hover": {
                               backgroundColor: theme.palette.secondary.second,
                             },
                           }}
                         >
-                          TypeScript
-                        </Button>
+                          <img src={w1} alt="alt" />
+                        </Box>
                       </Box>
                     </Box>
                   </div>

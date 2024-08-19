@@ -133,7 +133,7 @@ const Header = () => {
     // },
     { label: "Services", to: "/service" },
     { label: "Career", to: "/career" },
-    { label: "Blog", to: "/blogs" },
+    { label: "Case Study", to: "/case-study" },
     { label: "Contact Us", to: "/contact" },
   ];
 

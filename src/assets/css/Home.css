@@ -55,16 +55,11 @@
 .development.image {
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
 }
 .development.image img{
   border-radius: 10px;
 }
-.development.image img:hover{
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
-  border-radius: 10px;
-}
+
 .development.image .tech {
   position: absolute;
   bottom: -4%;
