@@ -13,23 +13,24 @@ function OurGoal() {
       icon: w1,
       title: "Our Mission",
       description:
-        " Our mission is in your growth of the business with a better serving of high-tech custom ERP software. Our key area of business is concerned with the implementation of integrated enterprise software to eliminate operational challenges faced by you in your day-to-day business. ",
+        "We are dedicated to fostering your business growth through cutting-edge custom ERP solutions. Our focus is on implementing seamless enterprise software to overcome daily operational hurdles and enhance efficiency.",
     },
     {
       id: 2,
       icon: w2,
       title: "Our Vision",
       description:
-        " Our vision is to be the best among the IT service providers across the world. As the world is on a competitive edge we aim to provide the best enterprise system development solutions to our clients for acquiring a better position in the competitive market. ",
+        "Our vision is to emerge as a leading global IT service provider. In a rapidly evolving market, we strive to deliver top-tier enterprise system development solutions that secure a competitive edge for our clients.",
     },
     {
       id: 3,
       icon: w3,
-      title: "Core Values",
+      title: "Our Core Values",
       description:
-        " Our core values of the organization are to be providing solutions with quality, satisfaction, and commitment to upgrading your business in this competitive world. ",
+        "We are committed to delivering high-quality solutions with a focus on client satisfaction and continuous improvement, ensuring your business thrives in a dynamic and competitive environment.",
     },
   ];
+  
   return (
     <>
       <Box
@@ -43,7 +44,7 @@ function OurGoal() {
         }}
       >
         <Container>
-          <Box sx={{ textAlign: "left", marginBottom: 2 }}>
+          <Box sx={{ textAlign: "center", marginBottom: 2 }}>
             <Typography
               variant="h4"
               component="h4"
@@ -54,7 +55,7 @@ function OurGoal() {
                 mb: 1,
               }}
             >
-              Just Know About Our Goals
+               Our Goals
             </Typography>
             <Grid
               container

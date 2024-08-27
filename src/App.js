@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Global/Header";
 import Home from "./Pages/Home";
 import Loader from "./Global/Loader";
@@ -10,6 +10,13 @@ import Service from "./Pages/Service";
 import Careers from "./Pages/Careers";
 import Contact from "./Pages/Contact";
 import CaseStudy from "./Pages/CaseStudy";
+
+// MUI Icons
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ChatIcon from "@mui/icons-material/Chat"; // Alternative for Skype
+import EmailIcon from "@mui/icons-material/Email";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import GetAqoate from "./Global/GetAqoate";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -37,25 +44,63 @@ function App() {
 
   return (
     <>
-      <Header />
-      <ScrollToTop />
-      {loading ? (
-        <Loader/>
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/service" element={<Service/>} />
-          <Route path="/career" element={<Careers/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/case-study" element={<CaseStudy/>} />
-      
+      <div className="main-outer">
+        <div className="social-inner">
+          <ul>
+            <li >
+              <Link to="https://wa.me/9408304364">
+                <div className="watshapp social">
+                  <WhatsAppIcon />
+                  <span>+91 9408304364</span>
+                </div>
+              </Link>
+            </li>
+            <li >
+              <Link to="">
+                <div className="skype social">
+                  <ChatIcon />
+                  <span>Deowebtech</span>
+                </div>
+              </Link>
+            </li>
+            <li >
+              <Link to="mailto:deowebtech9@gail.com">
+                <div className="email social">
+                  <EmailIcon />
+                  <span>deowebtech9@gmail.com</span>
+                </div>
+              </Link>
+            </li>
+            <li >
+              <Link to="/get-in-qoute">
+                <div className="contact social">
+                  <ContactPhoneIcon />
+                  <span>Contact Us</span>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Header />
+        <ScrollToTop />
+        {loading ? (
+          <Loader />
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/career" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/case-study" element={<CaseStudy />} />
+            <Route path="/get-in-qoute" element={<GetAqoate />} />
 
-          {/* Fallback Route */}
-          {/* <Route path="*" element={<NoPageFound />} /> */}
-        </Routes>
-      )}
-      <Footer />
+            {/* Fallback Route */}
+            {/* <Route path="*" element={<NoPageFound />} /> */}
+          </Routes>
+        )}
+        <Footer />
+      </div>
     </>
   );
 }

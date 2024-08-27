@@ -80,7 +80,7 @@ function Services() {
                   borderRadius: 1,
                 }}
               >
-                Web development
+                Web Solutions
               </Box>
               <Box>
                 <Typography
@@ -92,8 +92,7 @@ function Services() {
                     pt: 2,
                   }}
                 >
-                  Hassle-free Web Development Services: Tailored Made Website
-                  Development
+                  Seamless Web Solutions: Custom Website Crafting for Your Needs
                 </Typography>
                 <Typography
                   sx={{
@@ -102,9 +101,9 @@ function Services() {
                     py: 1,
                   }}
                 >
-                  Devotee infotech is committed to enhancing the customer
-                  experience by offering tailored made Website Development
-                  services.
+                  At Devotee Infotech, we specialize in creating bespoke
+                  websites designed to enhance user experience and meet your
+                  specific business needs.
                 </Typography>
                 <Typography
                   sx={{
@@ -114,21 +113,13 @@ function Services() {
                     lineHeight: "24px",
                   }}
                 >
-                  Devotee infotech is committed to enhancing the customer
-                  experience by offering tailored made website development
-                  services. Every business is unique and so for that Devotee
-                  infotech is a custom website development company, by
-                  delivering your business-centric approach for end-to-end
-                  solutions. With strong hands-on R&D and the right resources,
-                  our dedicated team excels in developing all kinds of websites.
-                  We manage all the tech problems with innovative solutions that
-                  make an entirely new flavor of solutions. Our highly-skilled
-                  and dedicated development team are expert in both backend as
-                  well as front-end development services. We have expertise in
-                  working with specific back-end technologies - Node JS and
-                  React JS. Our dedicated developer's team build sustainable
-                  workflow using different methodology and programming practices
-                  for the enhanced quality of the frontend code.
+                  Recognizing that each business is unique, we offer tailored
+                  web development solutions. Our skilled team excels in both
+                  frontend and backend development, utilizing advanced
+                  technologies such as Node.js and React.js. We ensure robust
+                  performance and innovative solutions to address any technical
+                  challenges, delivering websites that are both functional and
+                  engaging.
                 </Typography>
                 <Typography
                   sx={{
@@ -136,12 +127,12 @@ function Services() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  As a pioneer in providing outstanding and end-to-end digital
-                  solutions, we shoulder the responsibility to provide
-                  cutting-edge web development services to all our clients. We
-                  widely work for delivering tailored web apps to fit your
-                  specific business needs and engage customers. Contact us for
-                  more details.
+                  As leaders in digital innovation, we are committed to
+                  providing cutting-edge web development services that cater to
+                  your specific requirements. Whether you need a custom web app
+                  or a complete digital transformation, we're here to help.
+                  Contact us to learn more about how we can support your
+                  business.
                 </Typography>
               </Box>
               <Box>
@@ -155,7 +146,7 @@ function Services() {
                         mr: 2,
                       }}
                     />
-                    Enterprise resource planning(ERP)
+                    Enterprise Resource Planning (ERP) Solutions
                   </ListItem>
                   <ListItem>
                     <CircleIcon
@@ -165,12 +156,13 @@ function Services() {
                         fontFamily: theme.typography.fontFamily,
                         mr: 2,
                       }}
-                    />{" "}
-                    Amazon Web Services(AWS){" "}
+                    />
+                    Amazon Web Services (AWS) Integration
                   </ListItem>
                 </List>
               </Box>
             </Grid>
+
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
@@ -485,7 +477,7 @@ function Services() {
                   borderRadius: 1,
                 }}
               >
-                UI/UX Design
+                UI/UX Excellence
               </Box>
               <Box>
                 <Typography
@@ -497,8 +489,7 @@ function Services() {
                     pt: 2,
                   }}
                 >
-                  We believe that good UI/UX design is about more than just
-                  creating beautiful visuals.
+                  Exceptional UI/UX Design: Beyond Aesthetic Appeal
                 </Typography>
                 <Typography
                   sx={{
@@ -507,8 +498,8 @@ function Services() {
                     py: 1,
                   }}
                 >
-                  Visual design is about solving the problem, not about personal
-                  preference or unsupported opinions.
+                  Great design is not just about aesthetics; it's about
+                  addressing user needs and solving problems effectively.
                 </Typography>
                 <Typography
                   sx={{
@@ -519,9 +510,10 @@ function Services() {
                     wordSpacing: "2px",
                   }}
                 >
-                  In any web or mobile application, UI/UX design is the catalyst
-                  of success. Starting from conceptualization, information
-                  architecture, and visual identity.
+                  In both web and mobile applications, UI/UX design plays a
+                  crucial role in success. From initial concepts to information
+                  structure and visual presentation, we focus on creating
+                  impactful user experiences.
                 </Typography>
                 <Typography
                   sx={{
@@ -529,17 +521,12 @@ function Services() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  Deoweb is a well-known UI/UX design company where we have
-                  expertise in handcrafting beautiful web designs that build
-                  brand identity and effective ERP systems that help run your
-                  business smoothly and attract potential customers. We strive
-                  to bring solid results to our clients quicker with the best of
-                  our UI/UX designing services. Our ERP systems are
-                  tailored-made systems that suit specific customer
-                  requirements. If you want to create a compelling end-user
-                  experience with UI/UX design services, we craft interactive
-                  designs for your users on the web platforms. Contact us for
-                  more details.
+                  At Deoweb, we excel in designing interfaces that not only look
+                  great but also enhance user engagement and streamline
+                  operations. Our expertise extends to crafting customized ERP
+                  systems tailored to meet your business needs. Let us help you
+                  deliver an outstanding user experience with our comprehensive
+                  UI/UX design services. Reach out to us for more information.
                 </Typography>
               </Box>
             </Grid>
@@ -572,7 +559,7 @@ function Services() {
                   borderRadius: 1,
                 }}
               >
-                App development
+                Mobile App Development
               </Box>
               <Box>
                 <Typography
@@ -584,7 +571,7 @@ function Services() {
                     pt: 2,
                   }}
                 >
-                  Crafting Innovative and User-Centric Mobile Solutions
+                  Innovating Your Mobile Experience with Cutting-Edge Solutions
                 </Typography>
                 <Typography
                   sx={{
@@ -593,12 +580,11 @@ function Services() {
                     py: 1,
                   }}
                 >
-                  In today's digital era, mobile apps have become the
-                  cornerstone of success for businesses, offering an
-                  unparalleled way to engage with customers. Our mobile app
-                  development services are designed to transform your ideas into
-                  high-performance, feature-rich applications that resonate with
-                  your target audience.
+                  Mobile applications are pivotal in today’s digital landscape,
+                  offering a dynamic platform to engage and retain users. Our
+                  app development services are tailored to turn your vision into
+                  interactive, high-performing applications that captivate and
+                  serve your audience effectively.
                 </Typography>
                 <Typography
                   sx={{
@@ -608,17 +594,16 @@ function Services() {
                     lineHeight: "24px",
                   }}
                 >
-                  Our team of seasoned developers specializes in creating mobile
-                  apps that are not only visually appealing but also highly
-                  functional. We take a user-centric approach to design,
-                  ensuring that the apps we develop are easy to navigate and
-                  provide an exceptional user experience. From initial concept
-                  to final deployment, we work closely with you to understand
-                  your unique needs and goals, delivering a product that truly
-                  stands out in the competitive mobile landscape.
+                  Our expert developers focus on creating mobile apps that blend
+                  aesthetic appeal with practical functionality. We adopt a
+                  user-first approach to design, ensuring seamless navigation
+                  and an intuitive user experience. From ideation through to
+                  launch, we collaborate with you to ensure your app meets your
+                  strategic goals and stands out in a crowded market.
                 </Typography>
               </Box>
             </Grid>
+
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">

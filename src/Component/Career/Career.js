@@ -20,7 +20,7 @@ function Career() {
       id: 1,
       title: "Our Culture",
       description:
-        "Patoliya's culture is built on team collaboration, high performance, and opportunity. Everyone is encouraged to bring their skills & ideas, beliefs, backgrounds, talents, capabilities, and lifestyles to work.",
+        "Deowebtech culture is built on team collaboration, high performance, and opportunity. Everyone is encouraged to bring their skills & ideas, beliefs, backgrounds, talents, capabilities, and lifestyles to work.",
     },
     {
       id: 2,
@@ -75,7 +75,7 @@ function Career() {
           <Grid container spacing={3} row alignItems="center">
             <Grid item xs={12} md={6} lg={6}>
               <img
-                src="https://i.postimg.cc/HkqwB7FH/image.webp"
+                src="https://i.postimg.cc/CL0N7x7B/3679278.webp"
                 alt="images"
               />
             </Grid>
@@ -302,18 +302,19 @@ function Career() {
                       px: 1,
                       display: "flex",
                       justifyContent: "space-between",
-                      alignItems:'center'
+                      alignItems: "center",
                     }}
                   >
                     <Box
                       sx={{
-                        p:1,
+                        p: 1,
                         display: "flex",
                         justifyContent: "space-around",
                         color: theme.palette.primary.main,
                       }}
                     >
-                      <Box sx={{mr:2}}>React Js</Box> <Box> | </Box> <Box sx={{ml:2}}>Node Js</Box>
+                      <Box sx={{ mr: 2 }}>React Js</Box> <Box> | </Box>{" "}
+                      <Box sx={{ ml: 2 }}>Node Js</Box>
                     </Box>
                     <Typography
                       sx={{ color: theme.palette.customColors.black }}
@@ -326,7 +327,7 @@ function Career() {
                       p: 1,
                       display: "flex",
                       justifyContent: "space-between",
-                      alignItems:'center'
+                      alignItems: "center",
                     }}
                   >
                     <Button

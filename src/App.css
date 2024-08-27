@@ -23,3 +23,78 @@ a{
 img{
   width: 100%;
 }
+.main-outer {
+	position: relative;
+}
+/* .main-outer .social-inner {
+	position: absolute;
+	right: 0;
+	top: 50%;
+  transform: translateX(-50%);
+} */
+ 
+.social {
+  padding: 10px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #fff;
+  border-radius: 5px;
+}
+.social  span{
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.social  svg{
+  font-size: 35px;
+}
+ 
+.watshapp {
+	background-color: #03bc34;
+	left: 84%;
+	position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.watshapp:hover,
+.skype:hover,
+.email:hover,
+.contact:hover{
+  left:0;
+}
+.skype {
+  background-color: #00aae8;
+  left: 84%;
+	position: relative;
+  transition: all 0.5s ease-in-out;
+
+}
+
+ 
+.email {
+  background-color: #ef4f4f;
+  left: 84%;
+	position: relative;
+  transition: all 0.5s ease-in-out;
+
+}
+ 
+.contact {
+  background-color: #3ab3e7;
+  left: 84%;
+	position: relative;
+  transition: all 0.5s ease-in-out;
+
+}
+ 
+.main-outer .social-inner {
+	position: fixed;
+	right: 0;
+	top: 50%;
+  transform: translateY(-50%);
+	z-index: 50;
+}
+ 
+

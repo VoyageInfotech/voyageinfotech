@@ -1,10 +1,6 @@
 import React from "react";
 import axios from "axios";
-import {
-  Box,
-  Button,
-  TextField,
-} from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -32,7 +28,7 @@ const Form = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         const response = await axios.post(
-          "https://editsh-back.onrender.com/api/contact/add",
+          "https://deoweb-backend.onrender.com/api/contact/add",
           values
         );
         console.log("Submitted Data:", response.data);

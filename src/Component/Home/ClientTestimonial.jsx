@@ -1,35 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Container, Typography, Card, Avatar, Box } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { useTheme } from "@mui/material/styles";
-import image1 from  '../../assets/image/Home/Qa-testing.png'
+import axios from "axios";
 
-const ClientTestimonial = () => {
+const ClientsTestimonil = () => {
   const theme = useTheme();
-
-
-  const  testimonial=[
-    {
-        id:1,
-        image:image1,
-        name: "John Doe",
-        description: "The work is always high quality and ready on time. They make themselves available to fit my needs, and are flexible when I ask for changes or additions in the specification. Great work, and a pleasure to deal with."
-    },
-    {
-        id:2,
-        image:image1,
-        name: "John Doe",
-        description: "The work is always high quality and ready on time. They make themselves available to fit my needs, and are flexible when I ask for changes or additions in the specification. Great work, and a pleasure to deal with."
-    },
-    {
-        id:3,
-        image:image1,
-        name: "John Doe",
-        description: "The work is always high quality and ready on time. They make themselves available to fit my needs, and are flexible when I ask for changes or additions in the specification. Great work, and a pleasure to deal with."
+  const [testimonial, settestimonial] = useState([]);
+  const fetchExperiences = async () => {
+    try {
+      const response = await axios.get(
+        "https://editsh-back.onrender.com/api/testimonial/view"
+      );
+      console.log(response);
+      settestimonial(response?.data?.data);
+    } catch (err) {
+      console.error(err);
     }
-  ]
+  };
 
+  useEffect(() => {
+    fetchExperiences();
+  }, []);
 
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
@@ -50,7 +45,7 @@ const ClientTestimonial = () => {
           borderRadius: "4px",
           backgroundColor: theme.palette.primary.main,
           color: theme.palette.customColors.white,
-          boxShadow:theme.palette.customColors.shadow
+          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
         }}
         onClick={onClick}
       />
@@ -76,7 +71,7 @@ const ClientTestimonial = () => {
           padding: "8px",
           backgroundColor: theme.palette.primary.main,
           color: theme.palette.customColors.white,
-          boxShadow:theme.palette.customColors.shadow
+          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
         }}
         onClick={onClick}
       />
@@ -89,7 +84,7 @@ const ClientTestimonial = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: "linear",
+    cssEase: "linear", 
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -105,11 +100,8 @@ const ClientTestimonial = () => {
   return (
     <Box
       sx={{
-        my:{
-            xs:2,
-            md:3,
-            lg:4
-        },
+        py: 2,
+        sm: 4,
         backgroundColor: theme.palette.primary.second,
       }}
     >
@@ -119,20 +111,6 @@ const ClientTestimonial = () => {
           padding: 4,
         }}
       >
-        <Box sx={{ textAlign: "center", marginBottom: 2 }}>
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              color: theme.palette.secondary.third,
-              fontWeight: "bold",
-              mb: 1,
-            }}
-          >
-           What Our Clients Says
-          </Typography>
-        </Box>
-
         <Box
           position="relative"
           sx={{
@@ -147,7 +125,7 @@ const ClientTestimonial = () => {
                     margin: 2,
                     padding: 3,
                     textAlign: "center",
-                    boxShadow: theme.palette.customColors.shadow,
+                    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
                     borderRadius: "20px",
                     background:
                       "linear-gradient(112deg, #fff 50%, #e4f8ff 50%)",
@@ -164,8 +142,8 @@ const ClientTestimonial = () => {
                     }}
                   >
                     <Avatar
-                      alt={testimonial.image}
-                      src={testimonial.image}
+                      alt={testimonial.ClientImage}
+                      src={testimonial.ClientImage}
                       sx={{
                         margin: "0 auto",
                         marginBottom: 2,
@@ -178,7 +156,7 @@ const ClientTestimonial = () => {
                       component="div"
                       sx={{ textAlign: "center" }}
                     >
-                      {testimonial.name}
+                      {testimonial.ClientName}
                     </Typography>
                     <Typography
                       variant="body2"
@@ -191,7 +169,7 @@ const ClientTestimonial = () => {
                         fontStyle: "italic",
                       }}
                     >
-                      {testimonial.description}
+                      {testimonial.Review}
                     </Typography>
                   </Box>
                 </Card>
@@ -204,4 +182,4 @@ const ClientTestimonial = () => {
   );
 };
 
-export default ClientTestimonial;
+export default ClientsTestimonil;

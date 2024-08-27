@@ -13,46 +13,48 @@ function OurApproach() {
     {
       id: 1,
       icon: a1,
-      title: "Analysis",
+      title: "Client Requirement Analysis",
       description:
-        "Analysis of clients' unique requirements and objectives. Conduct detailed discussions and gather specific information about their business needs and target audience.",
+        "Conduct an in-depth analysis of client requirements and goals. Engage in detailed discussions to gather insights into their business needs and target demographics.",
     },
     {
       id: 2,
-      title: "Strategizing",
       icon: a2,
+      title: "Strategic Planning",
       description:
-        "Formulate a comprehensive plan and strategy for efficient project execution. Define project milestones, establish timelines, and allocate necessary resources.",
+        "Develop a thorough plan and strategy for project execution. Set clear milestones, create timelines, and allocate resources efficiently for smooth progress.",
     },
     {
       id: 3,
-      title: "Design",
       icon: a3,
+      title: "User-Centric Design",
       description:
-        "By conducting thorough research on the target audience, their preferences, and industry trends, we craft visually appealing and highly functional interfaces to provide a seamless user experience.",
+        "Design visually engaging and functional interfaces by researching user preferences and industry trends, aiming to deliver an intuitive user experience.",
     },
     {
       id: 4,
-      title: "Agile Development",
       icon: a4,
+      title: "Agile Development Process",
       description:
-        "We employ an agile development methodology, utilizing smaller iterations, regular reviews, and feedback sessions to adapt to changing requirements, ensuring flexibility, collaboration, and faster delivery.",
+        "Implement an agile development process with iterative cycles, regular reviews, and feedback loops to adapt swiftly to evolving requirements and ensure timely delivery.",
     },
     {
       id: 5,
-      title: "Rigorous Testing",
       icon: a5,
+      title: "Comprehensive Quality Testing",
       description:
-        "Ensure high-quality and reliable final product through comprehensive testing, addressing bugs, and optimizing performance across platforms for security and optimal functionality.",
+        "Conduct thorough testing to ensure the final product is secure, reliable, and performs optimally across all platforms, addressing bugs and enhancing functionality.",
     },
     {
       id: 6,
-      title: "Maintenance",
       icon: a6,
+      title: "Ongoing Support & Maintenance",
       description:
-        "Assist with the smooth deployment of the solution. Provide ongoing technical support and maintenance services for the project's long-term success.",
+        "Facilitate seamless deployment and offer continuous technical support and maintenance to ensure the long-term success of the solution.",
     },
   ];
+  
+
   return (
     <>
       <Box

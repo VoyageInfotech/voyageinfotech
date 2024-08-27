@@ -1,14 +1,12 @@
 import { Button } from '@mui/material'
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useTheme } from '@emotion/react'
 
-function Lightbtn() {
+function Lightbtn({text}) {
     const theme = useTheme();
 
   return (
     <div>
-    <Link>
       <Button sx={{
         backgroundColor: theme.palette.secondary.second,
         color:theme.palette.primary.third,
@@ -20,8 +18,7 @@ function Lightbtn() {
             color: theme.palette.secondary.second,
             transform: "scale(1.1)", 
           },
-      }}>Light Mode</Button>
-    </Link>
+      }}>{text}</Button>
   </div>
   )
 }

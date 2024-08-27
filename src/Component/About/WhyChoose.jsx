@@ -13,23 +13,24 @@ import { useTheme } from "@emotion/react";
 const companyDetails = [
   {
     icon: w1,
-    title: "Attentive to the Details",
+    title: "Detail-Oriented Excellence",
     description:
-      "In the grand scheme of things, the small intricacies of your business hold tremendous significance. We strive to grasp every facet of your operations, enabling us to deliver superior products and comprehensive after-sales services.",
+      "We believe that the smallest details can make the biggest difference. By thoroughly understanding your business, we deliver top-tier products and ensure exceptional support every step of the way.",
   },
   {
     icon: w2,
-    title: "You Are Exceptional",
+    title: "Your Uniqueness Matters",
     description:
-      "Recognizing the value of being heard, understood, and standing out, we have dedicated a team solely to craft custom web designs and solutions tailored specifically for you. Our web development specialists ensure you receive the exclusivity and distinctiveness you deserve.",
+      "We understand that your business is one-of-a-kind. Our dedicated team designs custom web solutions tailored to your specific needs, ensuring that your brand stands out and gets the recognition it deserves.",
   },
   {
     icon: w3,
-    title: "It's a Partnership",
+    title: "Collaborative Success",
     description:
-      "At the heart of the business lies relationships. Our goal extends beyond providing solutions; we aim to care for your business processes and offer expert IT consultancy, empowering you to focus on the core aspects of your enterprise.",
+      "Our approach is built on strong partnerships. We go beyond simply providing services; we collaborate with you, offering expert IT consulting to help you streamline processes and focus on what truly matters to your business.",
   },
 ];
+
 
 const WhyChoose = () => {
   const theme = useTheme();

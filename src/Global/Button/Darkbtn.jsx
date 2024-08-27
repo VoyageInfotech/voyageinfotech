@@ -1,13 +1,11 @@
 import { useTheme } from "@emotion/react";
 import { Button } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
 
-function Darkbtn() {
+function Darkbtn({text}) {
   const theme = useTheme();
   return (
     <div>
-      <Link>
         <Button
           sx={{
             backgroundColor: theme.palette.primary.third,
@@ -22,9 +20,8 @@ function Darkbtn() {
             },
           }}
         >
-          Dark Mode
+          {text}
         </Button>
-      </Link>
     </div>
   );
 }

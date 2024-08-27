@@ -52,21 +52,26 @@ function FeatureItem({ imgSrc, title, description }) {
 function Features() {
   const theme = useTheme();
   return (
-    <Box sx={{ py: {
-        xs: 2,
-        sm: 4,
-        md: 4,
-        lg: 6,
-      },
-    backgroundColor:theme.palette.secondary.second
-     }}>
+    <Box
+      sx={{
+        py: {
+          xs: 2,
+          sm: 4,
+          md: 4,
+          lg: 6,
+        },
+        backgroundColor: theme.palette.secondary.second,
+      }}
+    >
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
             <Typography
-              sx={{ fontSize: "30px", fontFamily: theme.palette.secondary.main,
-                fontWeight:'bold'
-               }}
+              sx={{
+                fontSize: "30px",
+                fontFamily: theme.palette.secondary.main,
+                fontWeight: "bold",
+              }}
             >
               Expect Great Features
             </Typography>
@@ -74,15 +79,15 @@ function Features() {
           <Grid item xs={12} sm={6} md={4}>
             <FeatureItem
               imgSrc={f1}
-              title="Quality"
-              description="We believe quality is important for our customer satisfaction which ultimately results in customer loyalty."
+              title="Excellence"
+              description="We prioritize excellence to ensure that our customers receive the best possible experience, fostering long-term loyalty."
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <FeatureItem
               imgSrc={f2}
-              title="Integrity"
-              description="Integrity will help us win the trust of our clients, build better partnerships and keep our employees happy."
+              title="Honesty"
+              description="Honesty is key to gaining our clients' trust, forging strong partnerships, and ensuring our team remains motivated and engaged."
             />
           </Grid>
         </Grid>

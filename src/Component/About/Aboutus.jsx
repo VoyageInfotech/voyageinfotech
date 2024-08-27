@@ -1,6 +1,7 @@
 import { useTheme } from "@emotion/react";
-import { Box,Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+
 function Aboutus() {
   const theme = useTheme();
   return (
@@ -30,7 +31,7 @@ function Aboutus() {
                   borderRadius: 1,
                 }}
               >
-                About us
+                Who We Are
               </Box>
               <Box>
                 <Typography
@@ -42,7 +43,7 @@ function Aboutus() {
                     pt: 2,
                   }}
                 >
-                  Make your life easier with help from
+                  Simplify Your Business Journey with
                 </Typography>
                 <Typography
                   variant="h5"
@@ -53,7 +54,7 @@ function Aboutus() {
                     pb: 1,
                   }}
                 >
-                  Deo Web
+                  DWOWEBTECH
                 </Typography>
                 <Typography
                   sx={{
@@ -62,8 +63,7 @@ function Aboutus() {
                     py: 1,
                   }}
                 >
-                  Deoweb is one of the fastest-growing information and
-                  technology companies with its head office in Surat.
+                  DWOWEBTECH is a dynamic and fast-growing IT company based in Surat, dedicated to empowering businesses with innovative technology solutions.
                 </Typography>
                 <Typography
                   sx={{
@@ -72,9 +72,7 @@ function Aboutus() {
                     py: 1,
                   }}
                 >
-                  Deoweb Infotech is a rapidly growing ERP software development
-                  company in India that ensures technology is in line with your
-                  business goals.
+                  As a leading ERP software development firm in India, we align technology with your business objectives to drive growth and efficiency.
                 </Typography>
                 <Typography
                   sx={{
@@ -82,18 +80,14 @@ function Aboutus() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  Regardless, of the size and nature of the business. At Deoweb,
-                  we provide the best ERP software solutions that help your
-                  business in adaption operational automati on in your
-                  organization.
+                  No matter the size or type of your business, DWOWEBTECH offers top-notch ERP solutions that streamline your operations and automate processes for enhanced productivity.
                 </Typography>
-               
               </Box>
             </Grid>
             <Grid item xs={12} lg={6}>
-                <Box>
-                    <img src="https://i.postimg.cc/bvVqFvtw/6909666.webp" alt="images"/>
-                </Box>
+              <Box>
+                <img src="https://i.postimg.cc/bvVqFvtw/6909666.webp" alt="About DWOWEBTECH" />
+              </Box>
             </Grid>
           </Grid>
         </Container>

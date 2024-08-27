@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Lightbtn from "../../Global/Button/Lightbtn";
 import Darkbtn from "../../Global/Button/Darkbtn";
+import { Link } from "react-router-dom";
 
 const HeroSlider = () => {
   const theme = useTheme();
@@ -35,12 +36,12 @@ const HeroSlider = () => {
       }}
     >
       <Container>
-        <Box 
-         sx={{
-          marginTop:{
-            xs: 10,
-          }
-         }}
+        <Box
+          sx={{
+            marginTop: {
+              xs: 10,
+            },
+          }}
         >
           <Grid container spacing={2} alignItems="center" row>
             <Grid item xs={12} md={6} lg={7}>
@@ -50,7 +51,6 @@ const HeroSlider = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   fontFamily: theme.palette.typography,
-                
                 }}
               >
                 <Typography
@@ -66,7 +66,7 @@ const HeroSlider = () => {
                     },
                   }}
                 >
-                  Your business deserves better
+                  Redefine What Your Business Can Achieve
                   <Typography
                     component="span"
                     variant="h3"
@@ -99,10 +99,13 @@ const HeroSlider = () => {
                       md: 14,
                     },
                     color: theme.palette.text.secondary,
+                    my:2
                   }}
                 >
-                  Devotee Web highly delivers the technology that works for
-                  tomorrow to empower your business needs.
+                  DWOWEBTECH, we craft innovative digital solutions with
+                  tomorrow's technology, driving your business forward.
+                  Experience seamless integration, unmatched performance, and
+                  future-ready development tailored to your success.
                 </Typography>
                 <Box
                   sx={{
@@ -115,20 +118,19 @@ const HeroSlider = () => {
                   }}
                 >
                   <Box sx={{ mr: 2 }}>
-                    <Lightbtn />
+                    <Link to="/about">
+                      <Lightbtn text={`About us`} />
+                    </Link>
                   </Box>
                   <Box>
-                    <Darkbtn />
+                    <Link to="contactF">
+                      <Darkbtn text={`Contact Us`} />
+                    </Link>
                   </Box>
                 </Box>
               </Box>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              lg={5}
-            >
+            <Grid item xs={12} md={6} lg={5}>
               <img
                 src="https://i.postimg.cc/pXLGkqpg/ui-ux-designers-isometric-composition-with-small-people-creating-custom-design-web-site-3d-vector-il.png"
                 alt="images"
