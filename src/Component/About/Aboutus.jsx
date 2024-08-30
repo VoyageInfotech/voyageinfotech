@@ -54,7 +54,7 @@ function Aboutus() {
                     pb: 1,
                   }}
                 >
-                  DWOWEBTECH
+                  Voyageinfotech
                 </Typography>
                 <Typography
                   sx={{
@@ -63,7 +63,7 @@ function Aboutus() {
                     py: 1,
                   }}
                 >
-                  DWOWEBTECH is a dynamic and fast-growing IT company based in Surat, dedicated to empowering businesses with innovative technology solutions.
+                  Voyageinfotech is a dynamic and fast-growing IT company based in Surat, dedicated to empowering businesses with innovative technology solutions.
                 </Typography>
                 <Typography
                   sx={{
@@ -80,7 +80,7 @@ function Aboutus() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  No matter the size or type of your business, DWOWEBTECH offers top-notch ERP solutions that streamline your operations and automate processes for enhanced productivity.
+                  No matter the size or type of your business, Voyage Infotech offers top-notch ERP solutions that streamline your operations and automate processes for enhanced productivity.
                 </Typography>
               </Box>
             </Grid>

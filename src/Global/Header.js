@@ -22,7 +22,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { NavLink } from "react-router-dom";
-import Hedaerlogo from "../assets/image/deoweblogo.png";
+import Hedaerlogo from "../assets/image/Voyage Logo.png";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const Header = () => {
@@ -86,51 +86,6 @@ const Header = () => {
   const menuItems = [
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
-    // {
-    //   label: "Technology",
-    //   subItems: [
-    //     {
-    //       category: "App Development",
-    //       items: [
-    //         {
-    //           label: "React Native Development",
-    //           to: "/mobile/reactNativeAppDevelopment",
-    //         },
-    //         {
-    //           label: "Flutter Development",
-    //           to: "/mobile/FlutterAppDevelopment",
-    //         },
-    //         { label: "iOS Development", to: "/mobile/iosAppDevelopment" },
-    //         {
-    //           label: "Android Development",
-    //           to: "/mobile/androidAppDevelopment",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       category: "Web Development",
-    //       items: [
-    //         {
-    //           label: "React JS Development",
-    //           to: "/frontend/reactJsDevelopment",
-    //         },
-    //         {
-    //           label: "Angular Development",
-    //           to: "/frontend/angularJsDevelopment",
-    //         },
-    //         { label: "Vue JS Development", to: "/frontend/vueJsDevelopment" },
-    //       ],
-    //     },
-    //     {
-    //       category: "Backend Development",
-    //       items: [
-    //         { label: "Node.js Development", to: "/backend/nodejsDevelopment" },
-    //         { label: ".NET Development", to: "/backend/netDevelopment" },
-    //         { label: "Python Development", to: "/backend/pythonDevelopment" },
-    //       ],
-    //     },
-    //   ],
-    // },
     { label: "Services", to: "/service" },
     { label: "Career", to: "/career" },
     { label: "Case Study", to: "/case-study" },
@@ -157,6 +112,7 @@ const Header = () => {
             : "transparent",
           boxShadow: 0,
           transition: "background-color 0.5s",
+          py:1
         }}
       >
         <Toolbar>
@@ -186,7 +142,7 @@ const Header = () => {
                       alt="Logo"
                       style={{
                         height: "80px",
-                        width: "100px",
+                        width: "80px",
                       }}
                     />
                   </Box>

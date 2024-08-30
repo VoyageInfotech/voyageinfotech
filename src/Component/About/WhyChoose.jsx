@@ -61,7 +61,7 @@ const WhyChoose = () => {
                 }
               }}
             >
-              Why Choose Deoweb ?
+              Why Choose Voyageinfotech ?
             </Typography>
           </Box>
 

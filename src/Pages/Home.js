@@ -12,7 +12,7 @@ function Home() {
     <>
       {/* Hero slider */}
       <HeroSlider />
-      {/* Why Choose Deoweb */}
+      {/* Why Choose voyageinfotech */}
       <WhyChoose />
       {/* Our Approach */}
       <OurApproach />

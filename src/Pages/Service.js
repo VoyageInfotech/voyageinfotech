@@ -7,7 +7,7 @@ function Service() {
     <>
       <PageTitle
         title={`Services`}
-        description={` Deoweb  is a leading technology company that offers a wide range of services to help businesses grow and succeed in today's competitive digital landscape  `}
+        description={` Voyage Infotech  is a leading technology company that offers a wide range of services to help businesses grow and succeed in today's competitive digital landscape  `}
       />
       <Services/>
     </>

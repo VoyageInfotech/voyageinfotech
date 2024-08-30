@@ -56,7 +56,7 @@ const WhyChoose = () => {
                 mb: 1,
               }}
             >
-              WHY DEOWEB ?
+              Why voyageinfotech ?
             </Typography>
             <Typography
               variant="h6"

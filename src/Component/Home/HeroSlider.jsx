@@ -102,7 +102,7 @@ const HeroSlider = () => {
                     my:2
                   }}
                 >
-                  DWOWEBTECH, we craft innovative digital solutions with
+                  Voyageinfotech, we craft innovative digital solutions with
                   tomorrow's technology, driving your business forward.
                   Experience seamless integration, unmatched performance, and
                   future-ready development tailored to your success.

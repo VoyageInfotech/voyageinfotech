@@ -10,7 +10,7 @@ function About() {
     <>
       <PageTitle
         title={`About`}
-        description={`Devotee Infotech is a dynamic and innovative software solutions provider, founded with the aim of providing exceptional technology services to businesses of all sizes. `}
+        description={`Voyage Infotech is a dynamic and innovative software solutions provider, founded with the aim of providing exceptional technology services to businesses of all sizes. `}
       />
       {/* About */}
       <Aboutus />

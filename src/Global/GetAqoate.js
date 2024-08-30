@@ -38,9 +38,9 @@ const GetAquote = () => {
       <Box
         sx={{
           py: {
-            xs: 2,
+            xs: 4,
             md: 4,
-            lg: 6,
+            lg: 8,
           },
           backgroundColor: theme.palette.secondary.second,
         }}
@@ -257,10 +257,10 @@ const GetAquote = () => {
                             sx={{
                               width: "130px",
                               borderRadius: 5,
-                              borderColor: theme.palette.grey[500],
-                              color: theme.palette.grey[500],
+                              borderColor: theme.palette.primary.main,
+                              color: theme.palette.primary.main,
                               "&:hover": {
-                                backgroundColor: theme.palette.grey[800],
+                                backgroundColor: theme.palette.primary.main,
                                 color: theme.palette.common.white,
                               },
                             }}

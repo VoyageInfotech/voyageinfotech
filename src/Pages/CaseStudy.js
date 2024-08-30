@@ -6,7 +6,7 @@ function CaseStudy() {
     <>
       <PageTitle
         title={`Case Study`}
-        description={`  Start working with Devotee Infotech that can provide everything you need to generate awareness, drive traffic, connect.  `}
+        description={`  Start working with Voyage Infotech that can provide everything you need to generate awareness, drive traffic, connect.  `}
       />
       <CaseStudys/>
     </>

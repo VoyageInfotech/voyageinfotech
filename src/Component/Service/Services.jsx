@@ -290,7 +290,7 @@ function Services() {
                 margin: "auto",
               }}
             >
-              Deoweb offers custom software development services that are
+              Voyageinfotech offers custom software development services that are
               tailored to meet the specific requirements of each client.
             </Typography>
           </Box>
@@ -521,7 +521,7 @@ function Services() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  At Deoweb, we excel in designing interfaces that not only look
+                  At Voyageinfotech, we excel in designing interfaces that not only look
                   great but also enhance user engagement and streamline
                   operations. Our expertise extends to crafting customized ERP
                   systems tailored to meet your business needs. Let us help you

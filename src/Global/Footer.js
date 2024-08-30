@@ -12,7 +12,7 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import SquareIcon from "@mui/icons-material/Square";
 import { Link } from "react-router-dom";
 import ScrollTotopbtn from "./ScrollTotopbtn";
-import  footerLogo from '../assets/image/deoweblogo.png';
+import footerLogo from "../assets/image/Voyage Logo.png";
 
 const Footer = () => {
   const theme = useTheme();
@@ -31,11 +31,11 @@ const Footer = () => {
       Icon: InstagramIcon,
     },
     {
-      href: "https://www.linkedin.com/company/104121643/admin/dashboard/",
+      href: "#",
       Icon: LinkedInIcon,
     },
     {
-      href: "https://wa.me/9408304364",
+      href: "https://wa.me/9537605003",
       Icon: WhatsAppIcon,
     },
   ];
@@ -44,20 +44,51 @@ const Footer = () => {
     {
       title: "Useful Links",
       links: [
-        { text: "Home", to: "/", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "About", to: "/about", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Blogs", to: "/blogs", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Services", to: "/service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Contact Us", to: "/contact-us", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        {
+          text: "Home",
+          to: "/",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "About",
+          to: "/about",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "Services",
+          to: "/service",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "Contact Us",
+          to: "/contact-us",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
       ],
     },
     {
       title: "Our Services",
       links: [
-        { text: "Web Development", to: "services", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "UI/UX  Design", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "App Development", to: "service", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
-        { text: "Career", to: "/career", icon: <SquareIcon sx={{ fontSize: "8px" }} /> },
+        {
+          text: "Web Development",
+          to: "services",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "UI/UX  Design",
+          to: "service",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "App Development",
+          to: "service",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
+        {
+          text: "Career",
+          to: "/career",
+          icon: <SquareIcon sx={{ fontSize: "8px" }} />,
+        },
       ],
     },
   ];
@@ -70,30 +101,37 @@ const Footer = () => {
           zIndex: 1,
           position: "relative",
           py: 6,
-          px: { xs: "1rem", sm: "1rem", md: "2rem", xl: "12rem" }
+          px: { xs: "1rem", sm: "1rem", md: "2rem", xl: "12rem" },
         }}
       >
-        <Grid
-          container
-          color={theme.palette.white}
-          sx={{ padding: "10px" }}
-        >
+        <Grid container color={theme.palette.white} sx={{ padding: "10px" }}>
           <Grid item xs={12} sm={6} md={6} lg={3} xl={4}>
             <Box>
-              <Link to={"/"}>
-                <img
-                  src={footerLogo} 
-                  alt="footer-logo"
-                  style={{ width: "30%", height: "120px" }}
-                />
-              </Link>
+             
+                <Link
+                  to={"/"}
+                  style={{
+                    width: "100%",
+                    textAlign:'center'
+                  }}
+                >
+                  <img
+                    src={footerLogo}
+                    alt="footer-logo"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      margin: "0 auto",
+                    }}
+                  />
+                </Link>
               <Typography
                 sx={{
                   fontSize: "14px",
                   color: theme.palette.primary.main,
                   fontFamily: theme.typography.fontFamily,
                   pr: 4,
-                  maxWidth:'400px'
+                  maxWidth: "400px",
                 }}
               >
                 Resources are the biggest strength of any organization, and it
@@ -212,15 +250,18 @@ const Footer = () => {
                     borderRadius: "50%",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
                   }}
                 >
-                  <EmailOutlinedIcon sx={{ fontSize: "25px" ,
-                    color:  theme.palette.customColors.white
-                  }} />
+                  <EmailOutlinedIcon
+                    sx={{
+                      fontSize: "25px",
+                      color: theme.palette.customColors.white,
+                    }}
+                  />
                 </Box>
                 <Link
-                  to="mailto:deoweb09@gmail.com"
+                  to="mailto:voyageinfotech01@gmail.com"
                   style={{
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
@@ -228,7 +269,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  deoweb09@gmail.com
+                  voyageinfotech01@gmail.com
                 </Link>
               </Box>
 
@@ -248,15 +289,18 @@ const Footer = () => {
                     borderRadius: "50%",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
                   }}
                 >
-                  <CallOutlinedIcon sx={{ fontSize: "25px" ,
-                    color:  theme.palette.customColors.white
-                  }} />
+                  <CallOutlinedIcon
+                    sx={{
+                      fontSize: "25px",
+                      color: theme.palette.customColors.white,
+                    }}
+                  />
                 </Box>
                 <Link
-                  to="tel:+91 9408304364"
+                  to="tel:+91 9537605003"
                   style={{
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
@@ -264,7 +308,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  +91 9408304364
+                  +91 9537605003
                 </Link>
               </Box>
 
@@ -284,12 +328,15 @@ const Footer = () => {
                     borderRadius: "50%",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
                   }}
                 >
-                  <FmdGoodIcon sx={{ fontSize: "25px" ,
-                    color:  theme.palette.customColors.white
-                  }} />
+                  <FmdGoodIcon
+                    sx={{
+                      fontSize: "25px",
+                      color: theme.palette.customColors.white,
+                    }}
+                  />
                 </Box>
                 <Link
                   to="#"
@@ -301,7 +348,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                 Royal Arcade,Surat,Gujarat -395006
+                  409, Shanti Niketan flora business point,abrama road,surat
                 </Link>
               </Box>
             </Box>

@@ -6,11 +6,13 @@ import case2 from "../../assets/image/caseStudy/case2.png";
 import case3 from "../../assets/image/caseStudy/case3.png";
 import case4 from "../../assets/image/caseStudy/case4.png";
 import case5 from "../../assets/image/caseStudy/case5.png";
+import { Link } from "react-router-dom";
 
 function CaseStudys() {
   const theme = useTheme();
   return (
     <>
+      {/* Gopinathji Farm House */}
       <Box
         sx={{
           py: {
@@ -26,7 +28,9 @@ function CaseStudys() {
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
-                  <img src={case1} alt="images" />
+                  <Link to="/https://gopinathjisuratfarm.com" target="_blank">
+                    <img src={case1} alt="images" />
+                  </Link>
                 </div>
               </Box>
             </Grid>
@@ -43,7 +47,7 @@ function CaseStudys() {
                   borderRadius: 1,
                 }}
               >
-                Jbs Technology
+                Gopinathji Farm House
               </Box>
               <Box>
                 <Typography
@@ -55,7 +59,7 @@ function CaseStudys() {
                     pt: 2,
                   }}
                 >
-                  ERP based Education Software
+                  Plan Your Perfect Weekend at Surat's Best Farm Houses
                 </Typography>
                 <Typography
                   sx={{
@@ -63,9 +67,12 @@ function CaseStudys() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  Jbs Technology ERP based education software by deoweb is a
-                  comprehensive and innovative solution for managing the daily
-                  operations of educational institutions.
+                  Gopinathji Farmhouse offers a tranquil retreat surrounded by
+                  lush greenery and serene landscapes. Perfect for weekend
+                  getaways, it provides a peaceful ambiance for relaxation and
+                  rejuvenation. With spacious accommodations, modern amenities,
+                  and a touch of rustic charm, it's an ideal choice for families
+                  and groups seeking a refreshing break from city life.
                 </Typography>
               </Box>
             </Grid>
@@ -73,6 +80,7 @@ function CaseStudys() {
         </Container>
       </Box>
 
+      {/* Easy Gold Fincorp */}
       <Box
         sx={{
           py: {
@@ -98,7 +106,7 @@ function CaseStudys() {
                   borderRadius: 1,
                 }}
               >
-                Infinity Exim
+                Easy Gold Fincorp
               </Box>
               <Box>
                 <Typography
@@ -129,7 +137,9 @@ function CaseStudys() {
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
-                  <img src={case2} alt="images" />
+                  <Link to="/easygoldfincorp.com" target="_blank">
+                    <img src={case2} alt="images" />
+                  </Link>
                 </div>
               </Box>
             </Grid>
@@ -137,6 +147,7 @@ function CaseStudys() {
         </Container>
       </Box>
 
+      {/* inifinity Exim */}
       <Box
         sx={{
           py: {
@@ -152,7 +163,9 @@ function CaseStudys() {
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
-                  <img src={case3} alt="images" />
+                  <Link to="https://infinityexim.net" target="_blank">
+                    <img src={case3} alt="images" />
+                  </Link>
                 </div>
               </Box>
             </Grid>
@@ -202,6 +215,7 @@ function CaseStudys() {
         </Container>
       </Box>
 
+      {/* Borad Consultancy */}
       <Box
         sx={{
           py: {
@@ -259,6 +273,10 @@ function CaseStudys() {
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
+                  <Link
+                    to="https://boradconsultancy.com"
+                    target="_blank"
+                  ></Link>
                   <img src={case4} alt="images" />
                 </div>
               </Box>
@@ -267,6 +285,7 @@ function CaseStudys() {
         </Container>
       </Box>
 
+      {/* hayanoverseas */}
       <Box
         sx={{
           py: {
@@ -282,7 +301,9 @@ function CaseStudys() {
             <Grid item xs={12} md={6} lg={5}>
               <Box>
                 <div className="development image">
-                  <img src={case5} alt="images" />
+                  <Link to="https://hayanoverseas.com" target="_blank">
+                    <img src={case5} alt="images" />
+                  </Link>
                 </div>
               </Box>
             </Grid>
@@ -299,7 +320,7 @@ function CaseStudys() {
                   borderRadius: 1,
                 }}
               >
-                Jbs It Institute
+                Hayanoverseas
               </Box>
               <Box>
                 <Typography
@@ -311,7 +332,7 @@ function CaseStudys() {
                     pt: 2,
                   }}
                 >
-                  Empowering your tech journey Website
+                  Empowering Import-Export Website
                 </Typography>
                 <Typography
                   sx={{
@@ -319,11 +340,11 @@ function CaseStudys() {
                     fontFamily: theme.typography.fontFamily,
                   }}
                 >
-                  JBS IT Institute provides industry-focused IT service courses,
-                  including network administration, cloud computing, and IT
-                  support. Our programs are designed to equip learners with
-                  practical skills and certifications, ensuring they are ready
-                  to meet the demands of today's tech-driven workplaces.
+                  Hayan Overseas is a leading trading company with a robust
+                  presence in [Area, City, State], offering expert import/export
+                  services. With years of experience, our trained staff provides
+                  tailored solutions to meet each client's needs, supported by
+                  advanced technology and top-notch consultancy services.
                 </Typography>
               </Box>
             </Grid>

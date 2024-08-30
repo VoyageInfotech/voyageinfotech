@@ -7,7 +7,7 @@ function Careers() {
     <>
       <PageTitle
         title={`Career`}
-        description={` At Deoweb, individuals can pursue a career in software development, design, testing, project management, and more.  `}
+        description={` At Voyageinfotech, individuals can pursue a career in software development, design, testing, project management, and more.  `}
       />
       {/* ===============Why Join Us===== */}
       <Career/>

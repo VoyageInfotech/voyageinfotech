@@ -18,17 +18,17 @@ function ContactUs() {
       icon: (
         <AddLocationAltIcon/>
       ),
-      text: "236, Royal Arcade, Surat",
+      text: "409, Shanti Niketan flora business point,abrama road,surat",
     },
     {
       icon: <EmailIcon />,
-      text: "deoweb09@gmail.com",
-      link: "mailto:deoweb09@gmail.com",
+      text: "Voyageinfotech09@gmail.com",
+      link: "mailto:Voyageinfotech09@gmail.com",
     },
     {
       icon: <PhoneIcon />,
-      text: "+91 96011 75985",
-      link: "tel:+91 96011 75985",
+      text: "+91 95376 05003",
+      link: "tel:+91 95376 05003",
     },
   ];
 
@@ -36,12 +36,12 @@ function ContactUs() {
     { icon: <FacebookIcon sx={{ fontSize: "40px" }} />, link: "#" },
     {
       icon: <InstagramIcon sx={{ fontSize: "40px" }} />,
-      link: "https://www.instagram.com/editsh_technology/",
+      link: "#",
     },
     { icon: <TwitterIcon sx={{ fontSize: "40px" }} />, link: "#" },
     {
       icon: <LinkedInIcon sx={{ fontSize: "40px" }} />,
-      link: "https://www.linkedin.com/company/editsh/about/",
+      link: "#",
     },
   ];
 

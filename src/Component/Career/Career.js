@@ -20,7 +20,7 @@ function Career() {
       id: 1,
       title: "Our Culture",
       description:
-        "Deowebtech culture is built on team collaboration, high performance, and opportunity. Everyone is encouraged to bring their skills & ideas, beliefs, backgrounds, talents, capabilities, and lifestyles to work.",
+        "Voyageinfotechtech culture is built on team collaboration, high performance, and opportunity. Everyone is encouraged to bring their skills & ideas, beliefs, backgrounds, talents, capabilities, and lifestyles to work.",
     },
     {
       id: 2,

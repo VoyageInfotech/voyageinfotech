@@ -47,31 +47,31 @@ function App() {
       <div className="main-outer">
         <div className="social-inner">
           <ul>
-            <li >
-              <Link to="https://wa.me/9408304364">
+            <li>
+              <Link to="https://wa.me/9537605003">
                 <div className="watshapp social">
                   <WhatsAppIcon />
-                  <span>+91 9408304364</span>
+                  <span>+91 9537605003</span>
                 </div>
               </Link>
             </li>
-            <li >
+            <li>
               <Link to="">
                 <div className="skype social">
                   <ChatIcon />
-                  <span>Deowebtech</span>
+                  <span>Voyageinfotech</span>
                 </div>
               </Link>
             </li>
-            <li >
-              <Link to="mailto:deowebtech9@gail.com">
+            <li>
+              <Link to="mailto:Voyageinfotechtech9@gail.com">
                 <div className="email social">
                   <EmailIcon />
-                  <span>deowebtech9@gmail.com</span>
+                  <span>voyageinfotech01@gmail.com</span>
                 </div>
               </Link>
             </li>
-            <li >
+            <li>
               <Link to="/get-in-qoute">
                 <div className="contact social">
                   <ContactPhoneIcon />
