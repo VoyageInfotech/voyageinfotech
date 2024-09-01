@@ -28,7 +28,7 @@ const Form = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         const response = await axios.post(
-          "http://localhost:8000/api/contact/add",
+          "https://voyage-back.onrender.com/api/contact/add",
           values
         );
         console.log("Submitted Data:", response.data);

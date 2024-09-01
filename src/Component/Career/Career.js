@@ -19,7 +19,7 @@ function Career() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/technology/view"
+        "https://voyage-back.onrender.com/api/technology/view"
       );
       console.log(response?.data?.data);
       setTechnology(response?.data?.data);

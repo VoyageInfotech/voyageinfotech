@@ -11,7 +11,6 @@ function Contact() {
         description={`If you have any questions or need assistance, please don't hesitate to contact us. We would love to hear from you. `}
       />
       <ContactUs />
-      {/* <InfiniteScrolling/> */}
     </>
   );
 }

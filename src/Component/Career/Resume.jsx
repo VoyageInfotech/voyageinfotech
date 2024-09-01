@@ -28,7 +28,7 @@ function Resume() {
   const fetchTechnology = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/technology/view"
+        "https://voyage-back.onrender.com/api/technology/view"
       );
 
       setTechnology(response?.data?.data);
@@ -51,7 +51,7 @@ function Resume() {
       formData.append("image", file);
 
       axios
-        .post("http://localhost:8000/api/upload-image", formData, {
+        .post("https://voyage-back.onrender.com/api/upload-image", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((response) => {
@@ -74,7 +74,7 @@ function Resume() {
     };
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/resume/add",
+        "https://voyage-back.onrender.com/api/resume/add",
         formData
       );
       if (response.status === 201) {

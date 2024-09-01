@@ -99,7 +99,7 @@ const GetAquote = () => {
 
                     try {
                       const response = await axios.post(
-                        "http://localhost:8000/api/gettouch/add",
+                        "https://voyage-back.onrender.com/api/gettouch/add",
                         values
                       );
                       toast.success(response.data.message);
