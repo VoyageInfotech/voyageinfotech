@@ -1,6 +1,6 @@
 import { useTheme } from "@emotion/react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import i1 from "../../assets/image/career/1.webp";
 import i2 from "../../assets/image/career/2.webp";
 import i3 from "../../assets/image/career/3.webp";
@@ -11,9 +11,26 @@ import i7 from "../../assets/image/career/7.webp";
 import i8 from "../../assets/image/career/8.webp";
 import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import axios from "axios";
 
 function Career() {
   const theme = useTheme();
+  const [technology, setTechnology] = useState([]);
+  const fetchTechnology = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:8000/api/technology/view"
+      );
+      console.log(response?.data?.data);
+      setTechnology(response?.data?.data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  useEffect(() => {
+    fetchTechnology();
+  }, []);
 
   const joinUs = [
     {
@@ -60,7 +77,7 @@ function Career() {
   ];
   return (
     <>
-      {/* Why Joi n us */}
+      {/* Why Join us */}
       <Box
         sx={{
           py: {
@@ -136,7 +153,7 @@ function Career() {
           </Grid>
         </Container>
       </Box>
-      {/* Opptunity with us */}
+      {/* Oppptunity  with us */}
       <Box
         sx={{
           py: {
@@ -236,7 +253,6 @@ function Career() {
         sx={{
           py: {
             xs: 2,
-            sm: 2,
             md: 3,
             lg: 6,
           },
@@ -258,129 +274,123 @@ function Career() {
             </Typography>
           </Box>
           <Grid container spacing={3} justifyContent="center" sx={{ mt: 3 }}>
-            <Grid item xs={12} md={6} lg={4}>
-              <Box
-                sx={{
-                  p: 1,
-                  border: `2px solid ${theme.palette.secondary.second}`,
-                  borderRadius: 2,
-                  display: "flex",
-                  alignItems: "center",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                    boxShadow: theme.shadows[6],
-                  },
-                }}
-              >
-                <Box>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: theme.palette.secondary.third,
-                      fontWeight: "bold",
-                      fontFamily: theme.typography.fontFamily,
-                      ml: 2,
-                    }}
-                  >
-                    Full Stack Developer
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: theme.palette.customColors.black,
-                      fontFamily: theme.typography.fontFamily,
-                      ml: 2,
-                      fontSize: "14px",
-                    }}
-                  >
-                    A full stack developer typically requires the following
-                    skills :
-                  </Typography>
-                  <Box
-                    sx={{
-                      px: 1,
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
+            {technology.map((tech) => (
+              <Grid item xs={12} md={6} lg={4}>
+                <Box
+                  sx={{
+                    p: 1,
+                    border: `2px solid ${theme.palette.secondary.second}`,
+                    borderRadius: 2,
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      boxShadow: theme.shadows[6],
+                    },
+                  }}
+                >
+                  <Box>
+                    <Box
+                      sx={{ p: 2, display: "flex", justifyContent: "center" }}
+                    >
+                      <div className="service-icon">
+                        <img
+                          src={tech.LanguagesLogo}
+                          alt="icon"
+                          style={{
+                            width: 100,
+                            height: 100,
+                            borderRadius:'50%'
+                          }}
+                        />
+                      </div>
+                    </Box>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        color: theme.palette.secondary.third,
+                        fontWeight: "bold",
+                        fontFamily: theme.typography.fontFamily,
+                        ml: 2,
+                      }}
+                    >
+                      {tech.LanguagesName}
+                    </Typography>
+                    <Box
+                      sx={{
+                        px: 2,
+                        py: 2,
+                      }}
+                    >
+                      <Typography
+                        sx={{ color: theme.palette.customColors.black }}
+                      >
+                        {tech.Experience}
+                      </Typography>
+                    </Box>
                     <Box
                       sx={{
                         p: 1,
                         display: "flex",
-                        justifyContent: "space-around",
-                        color: theme.palette.primary.main,
+                        width: "100%",
+                        justifyContent: "space-between",
+                        alignItems: "center",
                       }}
                     >
-                      <Box sx={{ mr: 2 }}>React Js</Box> <Box> | </Box>{" "}
-                      <Box sx={{ ml: 2 }}>Node Js</Box>
+                      <Box>
+                        <Button
+                          sx={{
+                            color: theme.palette.primary.main,
+                            backgroundColor: theme.palette.secondary.second,
+                          }}
+                        >
+                          {tech.workTime}
+                        </Button>
+                      </Box>
+                      <Box>
+                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                          <img
+                            src="https://i.postimg.cc/0Q3hxKdV/whatsapp-icon.png"
+                            alt="images"
+                            style={{ width: 20, height: 20 }}
+                          />
+                          <Link
+                            to="//api.whatsapp.com/send?phone=919408304364&text=Hi I am Interested"
+                            style={{
+                              color: theme.palette.primary.main,
+                              marginLeft: "10px",
+                            }}
+                          >
+                            Apply Here
+                          </Link>
+                        </Box>
+                      </Box>
                     </Box>
-                    <Typography
-                      sx={{ color: theme.palette.customColors.black }}
-                    >
-                      Exp. - 1+ Yrs.
-                    </Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      p: 1,
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Button
-                      sx={{
-                        color: theme.palette.primary.main,
-                        backgroundColor: theme.palette.secondary.second,
-                      }}
-                    >
-                      Full Time - WFH
-                    </Button>
-                    <Box sx={{ display: "flex", alignItems: "center" }}>
-                      <img
-                        src="https://i.postimg.cc/0Q3hxKdV/whatsapp-icon.png"
-                        alt="images"
-                        style={{ width: 20, height: 20 }}
-                      />
+                    <Box>
                       <Link
-                        to="//api.whatsapp.com/send?phone=919408304364&text=Hi I am Interested"
-                        target="_blank"
+                        to="/resume"
                         style={{
                           color: theme.palette.primary.main,
                           marginLeft: "10px",
                         }}
                       >
-                        Apply Here
+                        <Box
+                          sx={{ display: "flex", alignItems: "center", px: 2 }}
+                        >
+                          <Typography>Apply now</Typography>
+                          <ArrowRightAltIcon
+                            sx={{
+                              fontSize: 20,
+                              color: theme.palette.primary.main,
+                              ml: 2,
+                            }}
+                          />
+                        </Box>
                       </Link>
                     </Box>
                   </Box>
-                  <Box>
-                    <Link
-                      to="mailto:abhishekvaghasiya00@gmail.com"
-                      style={{
-                        color: theme.palette.primary.main,
-                        marginLeft: "10px",
-                      }}
-                    >
-                      <Box
-                        sx={{ display: "flex", alignItems: "center", px: 2 }}
-                      >
-                        <Typography>Apply now</Typography>
-                        <ArrowRightAltIcon
-                          sx={{
-                            fontSize: 20,
-                            color: theme.palette.primary.main,
-                            ml: 2,
-                          }}
-                        />
-                      </Box>
-                    </Link>
-                  </Box>
                 </Box>
-              </Box>
-            </Grid>
+              </Grid>
+            ))}
           </Grid>
         </Container>
       </Box>

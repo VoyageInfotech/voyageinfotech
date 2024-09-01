@@ -42,7 +42,7 @@ const GetAquote = () => {
             md: 4,
             lg: 8,
           },
-          backgroundColor: theme.palette.secondary.second,
+          backgroundColor: theme.palette.customColors.white,
         }}
       >
         <Box sx={{ textAlign: "center", marginBottom: 2 }}>
@@ -99,7 +99,7 @@ const GetAquote = () => {
 
                     try {
                       const response = await axios.post(
-                        "https://deoweb-backend.onrender.com/api/gettouch/add",
+                        "http://localhost:8000/api/gettouch/add",
                         values
                       );
                       toast.success(response.data.message);

@@ -17,6 +17,7 @@ import ChatIcon from "@mui/icons-material/Chat"; // Alternative for Skype
 import EmailIcon from "@mui/icons-material/Email";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import GetAqoate from "./Global/GetAqoate";
+import Resume from "./Component/Career/Resume";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -92,6 +93,7 @@ function App() {
             <Route path="/service" element={<Service />} />
             <Route path="/career" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="/case-study" element={<CaseStudy />} />
             <Route path="/get-in-qoute" element={<GetAqoate />} />
 

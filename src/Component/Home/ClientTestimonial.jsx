@@ -13,7 +13,7 @@ const ClientsTestimonil = () => {
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
-        "https://editsh-back.onrender.com/api/testimonial/view"
+        "http://localhost:8000/api/testimonial/view"
       );
       console.log(response);
       settestimonial(response?.data?.data);
