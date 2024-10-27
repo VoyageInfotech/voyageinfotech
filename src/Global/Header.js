@@ -22,7 +22,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { NavLink } from "react-router-dom";
-import Hedaerlogo from "../assets/image/Voyage Logo.png";
+import Hedaerlogo from "../assets/image/voyage.png";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const Header = () => {
@@ -141,8 +141,8 @@ const Header = () => {
                       src={Hedaerlogo}
                       alt="Logo"
                       style={{
-                        height: "80px",
-                        width: "80px",
+                        height: "50px",
+                        width: "200px",
                       }}
                     />
                   </Box>

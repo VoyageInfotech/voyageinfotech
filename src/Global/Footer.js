@@ -12,7 +12,7 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import SquareIcon from "@mui/icons-material/Square";
 import { Link } from "react-router-dom";
 import ScrollTotopbtn from "./ScrollTotopbtn";
-import footerLogo from "../assets/image/Voyage Logo.png";
+import footerLogo from "../assets/image/voyage.png";
 
 const Footer = () => {
   const theme = useTheme();
@@ -107,24 +107,24 @@ const Footer = () => {
         <Grid container color={theme.palette.white} sx={{ padding: "10px" }}>
           <Grid item xs={12} sm={6} md={6} lg={3} xl={4}>
             <Box>
-             
-                <Link
-                  to={"/"}
+              <Link
+                to={"/"}
+                style={{
+                  width: "100%",
+                  textAlign: "center",
+                  marginBottom:'30px'
+                }}
+              >
+                <img
+                  src={footerLogo}
+                  alt="footer-logo"
                   style={{
-                    width: "100%",
-                    textAlign:'center'
+                    width: "60%",
+                    height: "50px",
+                    margin: "0 auto",
                   }}
-                >
-                  <img
-                    src={footerLogo}
-                    alt="footer-logo"
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      margin: "0 auto",
-                    }}
-                  />
-                </Link>
+                />
+              </Link>
               <Typography
                 sx={{
                   fontSize: "14px",
@@ -243,7 +243,6 @@ const Footer = () => {
               >
                 <Box
                   sx={{
-                    backgroundColor: theme.palette.secondary.main,
                     width: "40px",
                     height: "40px",
                     textAlign: "center",
@@ -256,12 +255,12 @@ const Footer = () => {
                   <EmailOutlinedIcon
                     sx={{
                       fontSize: "25px",
-                      color: theme.palette.customColors.white,
+                      color: theme.palette.secondary.main,
                     }}
                   />
                 </Box>
                 <Link
-                  to="mailto:voyageinfotech01@gmail.com"
+                  to="mailto:contact@voyageinfotech.com"
                   style={{
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
@@ -269,7 +268,7 @@ const Footer = () => {
                     marginLeft: "18px",
                   }}
                 >
-                  voyageinfotech01@gmail.com
+                  contact@voyageinfotech.com
                 </Link>
               </Box>
 
@@ -282,7 +281,6 @@ const Footer = () => {
               >
                 <Box
                   sx={{
-                    backgroundColor: theme.palette.secondary.main,
                     width: "40px",
                     height: "40px",
                     textAlign: "center",
@@ -295,7 +293,7 @@ const Footer = () => {
                   <CallOutlinedIcon
                     sx={{
                       fontSize: "25px",
-                      color: theme.palette.customColors.white,
+                      color: theme.palette.secondary.main,
                     }}
                   />
                 </Box>
@@ -321,7 +319,6 @@ const Footer = () => {
               >
                 <Box
                   sx={{
-                    backgroundColor: theme.palette.secondary.main,
                     width: "40px",
                     height: "40px",
                     textAlign: "center",
@@ -334,7 +331,7 @@ const Footer = () => {
                   <FmdGoodIcon
                     sx={{
                       fontSize: "25px",
-                      color: theme.palette.customColors.white,
+                      color: theme.palette.secondary.main,
                     }}
                   />
                 </Box>
@@ -345,7 +342,7 @@ const Footer = () => {
                     color: theme.palette.primary.main,
                     fontFamily: theme.typography.fontFamily,
                     fontSize: "14px",
-                    marginLeft: "18px",
+                    marginLeft: "24px",
                   }}
                 >
                   409, Shanti Niketan flora business point,abrama road,surat

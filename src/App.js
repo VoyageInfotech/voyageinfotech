@@ -52,7 +52,6 @@ function App() {
               <Link to="https://wa.me/9537605003">
                 <div className="watshapp social">
                   <WhatsAppIcon />
-                  <span>+91 9537605003</span>
                 </div>
               </Link>
             </li>
@@ -60,15 +59,13 @@ function App() {
               <Link to="">
                 <div className="skype social">
                   <ChatIcon />
-                  <span>Voyageinfotech</span>
                 </div>
               </Link>
             </li>
             <li>
-              <Link to="mailto:Voyageinfotechtech9@gail.com">
+              <Link to="mailto:contact@voyageinfotech.com">
                 <div className="email social">
                   <EmailIcon />
-                  <span>voyageinfotech01@gmail.com</span>
                 </div>
               </Link>
             </li>
@@ -76,7 +73,6 @@ function App() {
               <Link to="/get-in-qoute">
                 <div className="contact social">
                   <ContactPhoneIcon />
-                  <span>Contact Us</span>
                 </div>
               </Link>
             </li>

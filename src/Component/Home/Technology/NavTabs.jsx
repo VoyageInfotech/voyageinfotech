@@ -1,14 +1,22 @@
 import React, { useState } from "react";
-import { Button, ButtonGroup, Container, Box, Typography } from "@mui/material";
+import {
+  Button,
+  ButtonGroup,
+  Container,
+  Box,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
+import { useTheme } from "@emotion/react";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 import Database from "./Database";
 import Design from "./Design";
 import ProjectManagement from "./ProjectManagement";
-import { useTheme } from "@emotion/react";
 
 const NavTabs = () => {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [activeTab, setActiveTab] = useState("Frontend");
 
   const handleTabChange = (tab) => {
@@ -26,6 +34,7 @@ const NavTabs = () => {
             color: theme.palette.secondary.third,
             fontWeight: "bold",
             mb: 1,
+            fontSize: isSmallScreen ? "1.5rem" : "2rem",
           }}
         >
           Technologies & Platforms We Work With
@@ -37,6 +46,7 @@ const NavTabs = () => {
             fontWeight: 400,
             maxWidth: 700,
             margin: "auto",
+            fontSize: isSmallScreen ? "0.9rem" : "1.25rem",
           }}
         >
           We adopt the most appropriate solution considering the required
@@ -46,9 +56,13 @@ const NavTabs = () => {
       <ButtonGroup
         variant="outlined"
         aria-label="nav tabs"
+        orientation={isSmallScreen ? "vertical" : "horizontal"}
         sx={{
           display: "flex",
           justifyContent: "center",
+          flexDirection: isSmallScreen ? "column" : "row",
+          gap: isSmallScreen ? 1 : 0,
+          width: isSmallScreen ? "100%" : "auto",
         }}
       >
         <Button

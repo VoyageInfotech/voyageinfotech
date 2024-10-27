@@ -113,6 +113,7 @@ function ContactUs() {
                           display: "flex",
                           alignItems: "center",
                           mb: 2,
+                          padding:"10px"
                         }}
                       >
                         <Box
@@ -125,6 +126,7 @@ function ContactUs() {
                             backgroundColor: theme.palette.secondary.second,
                             color: theme.palette.primary.main,
                             borderRadius: "10%",
+                            padding:'10px',
                             mr: 2,
                           }}
                         >

@@ -51,50 +51,40 @@ img{
 .social  svg{
   font-size: 35px;
 }
- 
+ @media(max-width:360px){
+  .social  svg{
+    font-size: 25px;
+  }
+ }
 .watshapp {
 	background-color: #03bc34;
-	left: 84%;
-	position: relative;
-  transition: all 0.5s ease-in-out;
 }
-.watshapp:hover,
-.skype:hover,
-.email:hover,
-.contact:hover{
-  left:0;
-}
+
 .skype {
   background-color: #00aae8;
-  left: 84%;
-	position: relative;
-  transition: all 0.5s ease-in-out;
-
 }
 
  
 .email {
-  background-color: #ef4f4f;
-  left: 84%;
-	position: relative;
-  transition: all 0.5s ease-in-out;
-
+  background-color: hsl(0, 83%, 62%);
 }
  
 .contact {
   background-color: #3ab3e7;
-  left: 84%;
-	position: relative;
-  transition: all 0.5s ease-in-out;
 
 }
  
 .main-outer .social-inner {
 	position: fixed;
-	right: 0;
+	right: 0%;
 	top: 50%;
   transform: translateY(-50%);
 	z-index: 50;
 }
  
+/* @media(max-width:479px){
+  .main-outer .social-inner{
+	right: 32px;
+  }
+} */
 

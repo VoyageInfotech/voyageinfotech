@@ -12,8 +12,8 @@ function Frontend() {
   const front = [
     { id: 1, src: i1, heading: "HTML" },
     { id: 2, src: i2, heading: "CSS" },
-    { id: 3, src: i3, heading: "React js" },
-    { id: 4, src: i4, heading: "Typescript" },
+    { id: 3, src: i3, heading: "Typescript" },
+    { id: 4, src: i4, heading: "React Js" },
     { id: 5, src: i5, heading: "Next js" },
   ];
   const theme = useTheme();
