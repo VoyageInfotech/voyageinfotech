@@ -61,7 +61,7 @@ const Footer = () => {
         },
         {
           text: "Contact Us",
-          to: "/contact-us",
+          to: "/contact",
           icon: <SquareIcon sx={{ fontSize: "8px" }} />,
         },
       ],
@@ -71,7 +71,7 @@ const Footer = () => {
       links: [
         {
           text: "Web Development",
-          to: "services",
+          to: "service",
           icon: <SquareIcon sx={{ fontSize: "8px" }} />,
         },
         {
