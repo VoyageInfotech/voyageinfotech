@@ -7,16 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { useTheme } from "@mui/material/styles";
 import axios from "axios";
 
-const ClientsTestimonil = () => {
+const ClientsTestimonial = () => {
   const theme = useTheme();
-  const [testimonial, settestimonial] = useState([]);
+  const [testimonial, setTestimonial] = useState([]);
   const fetchExperiences = async () => {
     try {
       const response = await axios.get(
         "https://voyage-back.onrender.com/api/testimonial/view"
       );
       console.log(response);
-      settestimonial(response?.data?.data);
+      setTestimonial(response?.data?.data);
     } catch (err) {
       console.error(err);
     }
@@ -182,4 +182,4 @@ const ClientsTestimonil = () => {
   );
 };
 
-export default ClientsTestimonil;
+export default ClientsTestimonial;
